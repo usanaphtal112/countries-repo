@@ -98,3 +98,77 @@ capital {
   margin: 0.5rem;
   border-radius: 5px;
 }
+
+
+/* Navbar Styles */
+.navbar {
+  background-color: var(--white);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-left {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-left {
+      font-size: 14px;
+  }
+
+  .switch {
+      margin-left: 10px;
+  }
+
+  .switch span {
+      font-size: 12px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 769px) {
+  .navbar-left {
+      font-size: 16px;
+  }
+
+  .switch {
+      margin-left: 20px;
+  }
+
+  .switch span {
+      font-size: 14px;
+  }
+}
+
+/* Moon Icon for Dark Mode */
+.moon-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  margin-right: 5px;
+}
+
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-image: none; /* Remove the white circle */
+}
